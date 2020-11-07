@@ -1,13 +1,10 @@
 local system = require("System")
 local event = require("Event")
-local GUI = require("GUI")
 ---------------------------------------------------------------------------------------------------
-
 
 local CubiPlayer = {
   HANDLER_INTERVAL = 1
 }
-
 
 ---------------------------------------------------------------------------------------------------
 
@@ -17,7 +14,6 @@ local function tCopy(obj)
   for k, v in pairs(obj) do res[tCopy(k)] = tCopy(v) end
   return res
 end
-
 
 ---------------------------------------------------------------------------------------------------
 
@@ -136,7 +132,6 @@ local function playerNext(player)
   player.current = nil
 end
 
-
 function CubiPlayer.player(fm)
   local player = {
     previous = {},
@@ -157,8 +152,6 @@ function CubiPlayer.player(fm)
   player.next = playerNext
   return player
 end
-
-
 
 ---------------------------------------------------------------------------------------------------
 
