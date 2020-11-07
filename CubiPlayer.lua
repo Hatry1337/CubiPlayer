@@ -101,12 +101,14 @@ local function playerPause(player)
   player.isPlaying = false
   if player.bgEvent ~= nil then
     event.removeHandler(player.bgEvent)
+    player.bgEvent = nil
   end
 end
 
 local function playerStop(player)
   if player.bgEvent ~= nil then
     event.removeHandler(player.bgEvent)
+    player.bgEvent = nil
   end
   player.radio.stop()
   player.isPlaying = false
