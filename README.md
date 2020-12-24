@@ -69,10 +69,6 @@ local track = {
 #### *Pauses playback*
 
 
-### player:**pause**()
-#### *Pauses playback*
-
-
 ### player:**stop**()
 #### *Stop playback, removes all tracks from queue, stops polling event*
 
@@ -82,7 +78,7 @@ local track = {
 
 
 
-### player:**newxt**()
+### player:**next**()
 #### *Go to next track in queue*
 
 
